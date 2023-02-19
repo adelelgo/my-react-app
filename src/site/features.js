@@ -9,8 +9,57 @@ import "../assets/css/tiny-slider.css";
 // import "../assets/js/tiny-slider.js";
 // import "../assets/js/typewriter.js";
 // import "../assets/js/wow.min.js";
+import FeaturesCom from "../site/featuresCom";
+
+import React, { useState } from "react";
 
 function Features() {
+  const [featureData, setfeatureData] = useState([
+    {
+      title: "Crafted for Startups",
+      image1:
+        "M3.66663 23.8333H14.6666V38.5H3.66663V23.8333ZM16.5 5.5H27.5V38.5H16.5V5.5Z",
+      image2: "M29.3333 14.6667H40.3333V38.5H29.3333V14.6667Z",
+      p1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inconvallis tortor.",
+    },
+    {
+      title: "High-quality Design",
+      image1:
+        "M22.9424 2.39982L39.0226 12.0468C39.1585 12.1282 39.271 12.2434 39.3492 12.3813C39.4273 12.5191 39.4684 12.6749 39.4684 12.8333C39.4684 12.9918 39.4273 13.1475 39.3492 13.2854C39.271 13.4232 39.1585 13.5384 39.0226 13.6198L22.0001 23.8333L4.97756 13.6198C4.84161 13.5384 4.72908 13.4232 4.65094 13.2854C4.57281 13.1475 4.53174 12.9918 4.53174 12.8333C4.53174 12.6749 4.57281 12.5191 4.65094 12.3813C4.72908 12.2434 4.84161 12.1282 4.97756 12.0468L21.0559 2.39982C21.341 2.22851 21.6674 2.138 22.0001 2.138C22.3327 2.138 22.6591 2.22851 22.9442 2.39982H22.9424Z",
+      image2:
+        "M36.8189 19.2501L39.0226 20.5719C39.1585 20.6533 39.271 20.7685 39.3492 20.9064C39.4273 21.0442 39.4684 21.1999 39.4684 21.3584C39.4684 21.5168 39.4273 21.6726 39.3492 21.8104C39.271 21.9483 39.1585 22.0635 39.0226 22.1449L22.0001 32.3584L4.97756 22.1449C4.84161 22.0635 4.72908 21.9483 4.65094 21.8104C4.57281 21.6726 4.53174 21.5168 4.53174 21.3584C4.53174 21.1999 4.57281 21.0442 4.65094 20.9064C4.72908 20.7685 4.84161 20.6533 4.97756 20.5719L7.18123 19.2501L22.0001 28.1417L36.8189 19.2501ZM36.8189 27.8667L39.0226 29.1886C39.1585 29.2699 39.271 29.3852 39.3492 29.523C39.4273 29.6609 39.4684 29.8166 39.4684 29.9751C39.4684 30.1335 39.4273 30.2893 39.3492 30.4271C39.271 30.5649 39.1585 30.6802 39.0226 30.7616L22.9442 40.4086C22.6591 40.5799 22.3327 40.6704 22.0001 40.6704C21.6674 40.6704 21.341 40.5799 21.0559 40.4086L4.97756 30.7616C4.84161 30.6802 4.72908 30.5649 4.65094 30.4271C4.57281 30.2893 4.53174 30.1335 4.53174 29.9751C4.53174 29.8166 4.57281 29.6609 4.65094 29.523C4.72908 29.3852 4.84161 29.2699 4.97756 29.1886L7.18123 27.8667L22.0001 36.7584L36.8189 27.8667Z",
+      p1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inconvallis tortor.",
+    },
+    {
+      title: "All Essential Sections",
+      image1:
+        "M3.66663 23.8333H14.6666V38.5H3.66663V23.8333ZM16.5 5.5H27.5V38.5H16.5V5.5Z",
+      image2: "M29.3333 14.6667H40.3333V38.5H29.3333V14.6667Z",
+      p1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inconvallis tortor.",
+    },
+    {
+      title: "Speed Optimized",
+      image1:
+        "M3.66663 23.8333H14.6666V38.5H3.66663V23.8333ZM16.5 5.5H27.5V38.5H16.5V5.5Z",
+      image2: "M29.3333 14.6667H40.3333V38.5H29.3333V14.6667Z",
+      p1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inconvallis tortor.",
+    },
+    {
+      title: "Fully Customizable",
+      image1:
+        "M3.66663 23.8333H14.6666V38.5H3.66663V23.8333ZM16.5 5.5H27.5V38.5H16.5V5.5Z",
+      image2: "M29.3333 14.6667H40.3333V38.5H29.3333V14.6667Z",
+      p1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inconvallis tortor.",
+    },
+    {
+      title: "Regular Updates",
+      image1:
+        "M3.66663 23.8333H14.6666V38.5H3.66663V23.8333ZM16.5 5.5H27.5V38.5H16.5V5.5Z",
+      image2: "M29.3333 14.6667H40.3333V38.5H29.3333V14.6667Z",
+      p1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Inconvallis tortor.",
+    },
+  ]);
+
   return (
     <>
       <section id="features" className="a1P sm:a1Q lg:a1u[130px]">
@@ -35,6 +84,14 @@ function Features() {
             </p>
           </div>
           <div className="a1R a5 a6 am">
+            <FeaturesCom data={featureData[0]}></FeaturesCom>
+            <FeaturesCom data={featureData[1]}></FeaturesCom>
+            <FeaturesCom data={featureData[2]}></FeaturesCom>
+            <FeaturesCom data={featureData[3]}></FeaturesCom>
+            <FeaturesCom data={featureData[4]}></FeaturesCom>
+            <FeaturesCom data={featureData[5]}></FeaturesCom>
+
+            {/*             
             <div className="a4 a1v md:a1S/2 lg:a1S/3">
               <div
                 className="wow fadeInUp aJ a1B a1M ae[380px] az md:a3q"
@@ -244,7 +301,7 @@ function Features() {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
